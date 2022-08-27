@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie wala bro</title>
+    <link rel="stylesheet" href="main.css">
+    <!--    fontawesome-->
+    <script src="https://kit.fontawesome.com/92e6b30f97.js" crossorigin="anonymous"></script>
+    <!--    jquery-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRKW5TRWH8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XRKW5TRWH8');
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="brand-logo">
+                <div><img src="images/logo.png"></div>
+                <div id="menu"><button id="btn-toggle"><i class="fas fa-bars"></i></button></div>
+            </div>
+
+            <div id="menu-links">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a id="animylase">Blog</a></li>
+                    <li><a id="us">About Us</a></li>
+                    <li><a href="#request">Request Movie</a></li>
+                    <li>
+                        <div id="menu-search">
+                            <div id="search">
+                                <div>
+                                    <form>
+                                        <input type="text" name="search" id="search" />
+                                    </form>
+                                </div>
+                                <div id="search-icon">
+                                    <button id="search-toggle"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </header>
+
+
+    <!--    header section ends here-->
+    <!-- <div class="bigb">
+        <div class="content">
+            <div id="popu">
+                <h2 style="font-size: 2em"><i class="fas fa-fire-alt" style="margin: 0px 5px;color: red;"></i>Popular
+                </h2>
+            </div>
+           
+            <div class="slideshow">
+
+                <button class="slide-btn slide-btn-1"></button>
+                <button class="slide-btn slide-btn-2"></button>
+                <button class="slide-btn slide-btn-3"></button>
+                <button class="slide-btn slide-btn-4"></button>
+
+                <div class="slideshow-wrapper">
+                    <div class="slide">
+                        <a href="https://myanimelist.net/anime/47778/Kimetsu_no_Yaiba__Yuukaku-hen" target="_blank"><img
+                                class="slide-img" src="https://images8.alphacoders.com/103/1035095.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://myanimelist.net/anime/34572/Black_Clover" target="_blank"><img
+                                class="slide-img" src="https://images.alphacoders.com/910/910281.jpg"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://myanimelist.net/anime/40834/Ousama_Ranking" target="_blank"><img
+                                class="slide-img" src="https://images8.alphacoders.com/118/1186483.jpg"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://myanimelist.net/anime/21/One_Piece" target="_blank"><img class="slide-img"
+                                src="https://images6.alphacoders.com/606/606263.jpg"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="appi">
+            <div id="popu">
+                <h2 style="font-size: 2em"><i class="fas fa-rss" style="margin: 0px 8px;color:#00bfff;"></i>Upcoming
+                </h2>
+            </div>
+            <div id="container"></div>
+        </div>
+    </div> -->
+    <!--    bolg section starts here-->
+
+    <div id="blog-container">
+
+
+    </div>
+
+    <footer id="footer">
+        <div>
+            <section id="request">
+                <div class="ccontainer">
+                    <form action="https://formspree.io/f/xknenjnw" method="POST" id="my-form">
+
+                        <div class="form-group">
+                            <label for="massage">Any Request for us Just type it here...</label>
+                            <textarea name="massage" id="massage" cols="20" rows="1"></textarea>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="status"></div>
+            </section>
+        </div>
+        
+    </footer>
+
+
+    <script src="main.js"></script>
+    <script src="new.js"></script>
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+
+
+    <!-- <script src="new.js"></script> -->
+
+</body>
+
+</html>

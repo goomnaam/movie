@@ -1,0 +1,626 @@
+body {
+    margin: 0px;
+    padding: 0px;
+     scroll-behavior: smooth;
+   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.brand-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 4px 0px;
+}
+
+.brand-logo img {
+    width: calc(30%);
+}
+
+#menu i {
+    font-size: 2em;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+#menu-links ul {
+    list-style: none;
+    padding-top: 10px;
+
+}
+
+#menu-links ul li {
+    padding: 10px;
+}
+
+#menu-links ul li a {
+    font-size: 25px;
+}
+
+#menu-links ul li:hover {
+    border-bottom: 2px solid #00bfff;
+    color: #00bfff;
+}
+
+#search {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#search-icon i {
+    font-size: 1.5em;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #00bfff;
+}
+
+#menu-links ul li:last-child {
+    border: none;
+}
+
+@media screen and (min-width:776px) {
+    #menu {
+        display: none;
+    }
+
+
+    #menu-links ul {
+        display: flex !important;
+        flex-wrap: wrap;
+        padding-right: 15px;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-shadow: 0px 0px 4px 0px;
+    }
+
+    .brand-logo {
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    .brand-logo img {
+        width: calc(50%);
+    }
+}
+
+
+/*header section ends*/
+
+/*blog section starts*/
+
+#blog-container {
+    height: auto;
+    padding: 15px;
+}
+
+.blog-img img {
+    width: calc(100%);
+}
+
+
+.p-head i {
+    margin: 0px 3px;
+}
+
+.p-head span {
+    padding: 5px;
+}
+
+#read-toggle1 {
+    display: none;
+    color: #00bfff;
+}
+
+#read-toggle {
+    color: #00bfff;
+}
+
+.collapsem {
+    display: none;
+}
+
+.coli {
+    color: #00bfff;
+}
+
+.p-head {
+    width: 95%;
+    margin: 0px auto;
+}
+
+.blog-text {
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+#blog-container > div,
+.content,
+#appi>div,#appi,#container>div {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 4px 0px;
+    border-radius: 5px;
+    margin: 10px 15px;
+    height: auto;
+    padding: 10px;
+}
+
+@media screen and (min-width:776px) {
+
+    #blog-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .blog-content {
+        padding: 10px;
+    }
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #00bfff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (min-width:992px) {
+
+    #blog-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+
+
+
+}
+
+
+.db,
+.wb {
+    border: 2px solid #00bfff;
+    border-radius: 5px;
+    margin: 5px 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.db:hover,
+.wb:hover {
+    background: #00bfff;
+    color: white;
+}
+
+
+@media screen and (min-width:776px) {
+
+    .db,
+    .wb {
+        margin: 10px 0px;
+        justify-content: space-around;
+
+    }
+
+    .db button,
+    .wb button {
+        font-size: 18px;
+    }
+}
+
+.next-in,
+.next2-in {
+    margin: 0px auto;
+    padding: 10px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+}
+
+.next-in h3,
+.next2-in h3 {
+    border-bottom: 2px solid #00bfff;
+    color: #00bfff;
+}
+
+#scroller ul li {
+    padding: 10px;
+}
+
+#scroller {
+    height: 150px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #00bfff;
+    /* color of the scroll thumb */
+    border-radius: 2px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #00bfff;
+    /* creates padding around scroll thumb */
+}
+
+#scroller::-webkit-scrollbar {
+    width: 12px;
+    /*width of the entire scrollbar */
+}
+
+#scroller::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+#scroller::-webkit-scrollbar-thumb {
+    background-color: #00bfff;
+    /* color of the scroll thumb */
+    height: 80px;
+    border-radius: 2px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #00bfff;
+    /* creates padding around scroll thumb */
+}
+
+/*popluar section*/
+/* places the carousel content on center of the carousel */
+
+
+/*----- end of carousel content stylings ----- */
+
+/* ----- slideshow stylings ----- */
+.slideshow {
+    height: 100%;
+    overflow: hidden;
+    /* to hide slides in x-direction */
+    position: relative;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+
+/* wrapper which wraps all the slideshow images stylings */
+.slideshow-wrapper {
+    display: flex;
+    /* We give it width as 400% because we are making a 
+               4 image carousel. If you want to make for example, 
+               5 images carousel, then give width as 500%. */
+    width: 400%;
+    height: 100%;
+    position: relative;
+    /* you can change the animation settings from below */
+    animation: slideshow 20s infinite;
+}
+
+/* define width and height for images*/
+.slide,
+#appi {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+}
+
+.slide-img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+/* @keyframes are used to provide animations
+           We make these settings for 4 image carousel.
+           Make modification accourding to your needs. */
+@keyframes slideshow {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    15% {
+        left: -100%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    30% {
+        left: -200%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    45% {
+        left: -300%;
+    }
+
+    55% {
+        left: -300%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -100%;
+    }
+
+    85% {
+        left: -100%;
+    }
+
+    90% {
+        left: 0%;
+    }
+}
+
+/* ----- end of slideshow stylings ----- */
+
+/* ----- carousel control buttons stylings ----- */
+.slide-btn {
+    background-color: white;
+    border: .2rem solid #00bfff;
+    width: 1.2rem;
+    height: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    /* stylings for positioning the buttons at
+               the bottom of the carousel */
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 70;
+}
+
+/* As we provide position as absolute, 
+        the buttons places one over the other. 
+        So, we have to place them individually
+        at their correct positions. */
+.slide-btn-1 {
+    left: 45%;
+}
+
+.slide-btn-2 {
+    left: 50%;
+}
+
+.slide-btn-3 {
+    left: 55%;
+}
+
+.slide-btn-4 {
+    left: 60%;
+}
+
+/* When we focus on the particular button, 
+        the animation stops to that particular image 
+        to which the button is associated. */
+.slide-btn-1:focus ~ .slideshow-wrapper {
+    animation: none;
+    left: 0;
+}
+
+.slide-btn-2:focus ~ .slideshow-wrapper {
+    animation: none;
+    left: -100%;
+}
+
+.slide-btn-3:focus ~ .slideshow-wrapper {
+    animation: none;
+    left: -200%;
+}
+
+.slide-btn-4:focus ~ .slideshow-wrapper {
+    animation: none;
+    left: -300%;
+}
+
+/* when we focus on the button, the background color changes */
+.slide-btn:focus {
+    background-color: #00bfff;
+}
+
+#popu {
+    margin: 0px 10px;
+}
+
+#appi{
+    height: 50vh;
+    overflow: scroll;
+}
+
+@media screen and (min-width:776px) {
+    .bigb {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .slideshow-wrapper {
+        height: 70%;
+    }
+
+    .slide-btn {
+        bottom: 33%;
+    }
+    #appi{
+    height: 80vh;
+}
+}
+
+@media screen and (min-width:992px) {
+    .bigb {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .slide-img {
+        margin: 0px;
+    }
+       
+    .slideshow-wrapper {
+        height: 80%;
+    }
+
+    .slide-btn {
+        bottom: 28%;
+    }
+
+}
+
+
+
+#appi::-webkit-scrollbar {
+    width: 12px;
+    /*width of the entire scrollbar */
+}
+
+#appi::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+#appi::-webkit-scrollbar-thumb {
+    background-color: #00bfff;
+    /* color of the scroll thumb */
+    height: 80px;
+    border-radius: 2px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #00bfff;
+    /* creates padding around scroll thumb */
+}
+
+.ccontainer {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid #00bfff;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: #00bfff;
+    color: white;
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+footer>div{
+    margin: 10px auto;
+    padding: 20px;
+}
+
+footer>div:last-child{
+    padding: 50px;
+}
+
